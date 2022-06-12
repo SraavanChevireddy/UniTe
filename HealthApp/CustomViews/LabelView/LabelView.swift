@@ -9,8 +9,8 @@ import UIKit
 
 class LabelView: UIView {
     
-    @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var heading: UILabel!
+    @IBOutlet var contentView: UIView!
+    @IBOutlet weak var title: UILabel!
     
     let xibName = "LabelView"
     

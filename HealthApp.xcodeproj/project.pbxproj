@@ -18,6 +18,13 @@
 		3C216B682853CB34007B863F /* HealthAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B672853CB34007B863F /* HealthAppUITestsLaunchTests.swift */; };
 		3C216B772853D391007B863F /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B762853D391007B863F /* LabelView.swift */; };
 		3C216B792853D39B007B863F /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C216B782853D39B007B863F /* LabelView.xib */; };
+		3C216B7A28564849007B863F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B482853CB31007B863F /* ViewController.swift */; };
+		3C216B7B2856484A007B863F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B482853CB31007B863F /* ViewController.swift */; };
+		3C216B7C285649DF007B863F /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B762853D391007B863F /* LabelView.swift */; };
+		3C216B7D285649E0007B863F /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B762853D391007B863F /* LabelView.swift */; };
+		3C216B7E285649F0007B863F /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C216B782853D39B007B863F /* LabelView.xib */; };
+		3C216B7F285649F1007B863F /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C216B782853D39B007B863F /* LabelView.xib */; };
+		3C216B8128564A82007B863F /* Coverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B8028564A82007B863F /* Coverage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,7 @@
 		3C216B672853CB34007B863F /* HealthAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3C216B762853D391007B863F /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		3C216B782853D39B007B863F /* LabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelView.xib; sourceTree = "<group>"; };
+		3C216B8028564A82007B863F /* Coverage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coverage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 			children = (
 				3C216B652853CB34007B863F /* HealthAppUITests.swift */,
 				3C216B672853CB34007B863F /* HealthAppUITestsLaunchTests.swift */,
+				3C216B8028564A82007B863F /* Coverage.swift */,
 			);
 			path = HealthAppUITests;
 			sourceTree = "<group>";
@@ -264,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C216B7E285649F0007B863F /* LabelView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C216B7F285649F1007B863F /* LabelView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C216B7A28564849007B863F /* ViewController.swift in Sources */,
 				3C216B5C2853CB34007B863F /* HealthAppTests.swift in Sources */,
+				3C216B7C285649DF007B863F /* LabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +313,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C216B7B2856484A007B863F /* ViewController.swift in Sources */,
+				3C216B8128564A82007B863F /* Coverage.swift in Sources */,
+				3C216B7D285649E0007B863F /* LabelView.swift in Sources */,
 				3C216B682853CB34007B863F /* HealthAppUITestsLaunchTests.swift in Sources */,
 				3C216B662853CB34007B863F /* HealthAppUITests.swift in Sources */,
 			);

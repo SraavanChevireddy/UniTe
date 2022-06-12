@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     private func loadUIComponents(){
         navigationItem.title = "Register"
-        capsuleView.heading.text = "Type your name as it happens on your insurance card"
+        capsuleView.title.text = "Type your name as it happens on your insurance card"
         barButton_cancel.action = #selector(clearAction)
         barButton_next.action = #selector(action_Submit)
     }

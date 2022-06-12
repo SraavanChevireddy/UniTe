@@ -18,20 +18,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqt-Rb-RKh">
-                                <rect key="frame" x="15" y="153" width="384" height="24"/>
+                                <rect key="frame" x="15" y="113" width="384" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFJ-7a-fJn" customClass="LabelView" customModule="HealthApp" customModuleProvider="target">
-                                <rect key="frame" x="10" y="187" width="394" height="50"/>
+                                <rect key="frame" x="10" y="147" width="394" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="UrB-wm-d4Q"/>
+                                    <constraint firstAttribute="height" constant="60" id="27N-Gr-iV8"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xK-Ps-hTu">
-                                <rect key="frame" x="20" y="242" width="374" height="20"/>
+                                <rect key="frame" x="20" y="212" width="374" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="eSi-DD-Vk9"/>
                                 </constraints>
@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your firstname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HOM-jp-XAZ">
-                                <rect key="frame" x="25" y="277" width="364" height="35"/>
+                                <rect key="frame" x="25" y="247" width="364" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="c1o-3i-iuH"/>
                                 </constraints>
@@ -48,7 +48,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezH-s6-7Gg">
-                                <rect key="frame" x="15" y="327" width="384" height="20"/>
+                                <rect key="frame" x="15" y="297" width="384" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="YUb-ey-6P4"/>
                                 </constraints>
@@ -57,7 +57,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="buu-b3-Hlw">
-                                <rect key="frame" x="25" y="362" width="364" height="35"/>
+                                <rect key="frame" x="25" y="332" width="364" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="NTv-L6-JXA"/>
                                 </constraints>
@@ -65,7 +65,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth (MM/dd/yyyy) *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wv1-i5-5iW">
-                                <rect key="frame" x="15" y="412" width="384" height="20"/>
+                                <rect key="frame" x="15" y="382" width="384" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="pEQ-Zv-zPU"/>
                                 </constraints>
@@ -74,7 +74,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Date Of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="98h-lF-aR4">
-                                <rect key="frame" x="25" y="447" width="364" height="35"/>
+                                <rect key="frame" x="25" y="417" width="364" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="kJB-jP-igx"/>
                                 </constraints>
@@ -82,7 +82,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last 4 of plan holder's  SSN or last 4 of ID card # *" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BT-kT-dd5">
-                                <rect key="frame" x="15" y="497" width="384" height="21"/>
+                                <rect key="frame" x="15" y="467" width="384" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Laa-kP-7AB"/>
                                 </constraints>
@@ -90,13 +90,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter SSN or ID Card #" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GTq-Wi-Y3Q">
-                                <rect key="frame" x="25" y="533" width="364" height="35"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter SSN or ID Card #" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GTq-Wi-Y3Q">
+                                <rect key="frame" x="25" y="503" width="364" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="EcH-3Z-36M"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2: Quantam Employers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="944-xA-fRd">
                                 <rect key="frame" x="25" y="817" width="364" height="20"/>
@@ -108,7 +108,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9M-py-alt">
-                                <rect key="frame" x="40" y="633" width="334" height="50"/>
+                                <rect key="frame" x="40" y="603" width="334" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="k6h-ru-WWf"/>
@@ -130,7 +130,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oqt-Rb-RKh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="0Hn-Rp-1C0"/>
+                            <constraint firstItem="oqt-Rb-RKh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="0Hn-Rp-1C0"/>
                             <constraint firstItem="3xK-Ps-hTu" firstAttribute="top" secondItem="HFJ-7a-fJn" secondAttribute="bottom" constant="5" id="4Gf-qK-KRL"/>
                             <constraint firstItem="buu-b3-Hlw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="5MJ-qk-y4G"/>
                             <constraint firstItem="GTq-Wi-Y3Q" firstAttribute="top" secondItem="6BT-kT-dd5" secondAttribute="bottom" constant="15" id="61O-eu-Ryk"/>
@@ -159,11 +159,14 @@
                             <constraint firstItem="ezH-s6-7Gg" firstAttribute="top" secondItem="HOM-jp-XAZ" secondAttribute="bottom" constant="15" id="aGk-ey-0Ng"/>
                             <constraint firstItem="oqt-Rb-RKh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="cg3-Zr-rbB"/>
                             <constraint firstItem="wv1-i5-5iW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="cyD-sh-DKg"/>
+                            <constraint firstItem="HFJ-7a-fJn" firstAttribute="top" secondItem="oqt-Rb-RKh" secondAttribute="bottom" constant="10" id="i62-jC-PNd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HFJ-7a-fJn" secondAttribute="trailing" constant="10" id="iSy-dS-GJQ"/>
                             <constraint firstItem="3xK-Ps-hTu" firstAttribute="top" secondItem="HFJ-7a-fJn" secondAttribute="bottom" constant="5" id="jCR-gn-4tf"/>
                             <constraint firstItem="wv1-i5-5iW" firstAttribute="top" secondItem="buu-b3-Hlw" secondAttribute="bottom" constant="15" id="lc0-9y-siV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O9M-py-alt" secondAttribute="trailing" constant="40" id="m3q-s8-U3h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HFJ-7a-fJn" secondAttribute="trailing" constant="10" id="odm-q6-WJU"/>
                             <constraint firstItem="3xK-Ps-hTu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pE7-5s-bJw"/>
+                            <constraint firstItem="HFJ-7a-fJn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="rqu-aT-ycA"/>
                             <constraint firstItem="O9M-py-alt" firstAttribute="top" secondItem="GTq-Wi-Y3Q" secondAttribute="bottom" constant="65" id="uYV-je-Fg8"/>
                             <constraint firstItem="HOM-jp-XAZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="x4I-RX-yhy"/>
                             <constraint firstItem="GTq-Wi-Y3Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="yCn-0Z-yIL"/>

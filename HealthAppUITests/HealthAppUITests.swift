@@ -9,6 +9,11 @@ import XCTest
 
 class HealthAppUITests: XCTestCase {
 
+    private var dateFormatter : DateFormatter = {
+        let modalFormatter = DateFormatter()
+        modalFormatter.dateFormat = "MM/dd/yyyy"
+        return modalFormatter
+    }()
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
@@ -25,10 +30,17 @@ class HealthAppUITests: XCTestCase {
         enterYourLastNameTextField.tap()
         enterYourLastNameTextField.typeText("Jonson")
         
+        let str_testDob = "12/31/1995"
+        
         let tf_dob = app.textFields["Enter Date Of Birth"]
         tf_dob.tap()
-        tf_dob.typeText("12/31/1995")
+        tf_dob.typeText(str_testDob)
         
+        if let _ = dateFormatter.date(from: str_testDob){
+            XCTAssert(true, "Valid Date format")
+        }else{
+            XCTAssert(false, "Please pass correct date format")
+        }
     }
     
     func testClearButton() throws{
@@ -57,13 +69,28 @@ class HealthAppUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc_register = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
+        vc_register?.loadViewIfNeeded()
+        
+        
         let enterYourFirstNameTextField = app.textFields["Enter your firstname"]
         enterYourFirstNameTextField.tap()
         enterYourFirstNameTextField.typeText("Samuel")
         
+        XCTAssertEqual(vc_register?.tf_firstName.textContentType, UITextContentType.givenName, "First Name textfield is not name")
+        
         let enterYourLastNameTextField = app.textFields["Enter your last name"]
         enterYourLastNameTextField.tap()
         enterYourLastNameTextField.typeText("Jonson")
+        
+        let tf_dob = app.textFields["Enter Date Of Birth"]
+        tf_dob.tap()
+        tf_dob.typeText("12/31/1995")
+        
+        let ssnTF = app.textFields["Enter SSN or ID Card #"]
+        ssnTF.tap()
+        ssnTF.typeText("12345678")
         
         let registerNavigationBar = app.navigationBars["Register"]
         registerNavigationBar.buttons["Next"].tap()
