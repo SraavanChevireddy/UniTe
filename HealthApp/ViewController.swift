@@ -33,11 +33,13 @@ class ViewController: UIViewController {
         barButton_next.action = #selector(action_Submit)
     }
     
-    @objc private func clearAction(){
+    @objc func clearAction(){
         let alert = UIAlertController(title: "Are you sure you want to clear fileds ?", message: nil, preferredStyle: .alert)
         let action = UIAlertAction(title: "Dismiss", style: .destructive) { [weak self] _ in
             if let self = self{
-                [self.tf_firstName, self.tf_lastName, self.tf_DateOfBirth, self.tf_ssn].forEach({$0?.text = nil})
+                self.clearFields { _ in
+                    print("Fileds cleared successfully")
+                }
             }
         }
         let action_cancel = UIAlertAction(title: "Cancel", style: .default, handler: nil)
@@ -45,7 +47,12 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    @objc private func action_Submit(){
+    func clearFields(completion: @escaping((Bool)->Void)){
+        [self.tf_firstName, self.tf_lastName, self.tf_DateOfBirth, self.tf_ssn].forEach({$0?.text = nil})
+        completion(true)
+    }
+    
+    @objc func action_Submit(){
         let alert = UIAlertController(title: "Form Sumbitted Successfully", message: nil, preferredStyle: .alert)
         
         let action_cancel = UIAlertAction(title: "Dismiss", style: .default, handler: nil)

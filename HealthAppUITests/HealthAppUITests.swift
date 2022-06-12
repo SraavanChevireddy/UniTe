@@ -14,6 +14,7 @@ class HealthAppUITests: XCTestCase {
         modalFormatter.dateFormat = "MM/dd/yyyy"
         return modalFormatter
     }()
+    
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
@@ -81,7 +82,7 @@ class HealthAppUITests: XCTestCase {
         tf_dob.tap()
         tf_dob.typeText("12/31/1995")
         
-        let ssnTF = app.textFields["Enter SSN or ID Card #"]
+        let ssnTF = app.textFields["Enter SSN or ID Card"]
         ssnTF.tap()
         ssnTF.typeText("12345678")
         
@@ -90,7 +91,19 @@ class HealthAppUITests: XCTestCase {
         app.alerts["Form Sumbitted Successfully"].scrollViews.otherElements.buttons["Dismiss"].tap()
     }
     
-
+    func testBoard(){
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle(for: type(of: self)))
+        let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        vc.clearFields { status in
+            XCTAssert(status, "Fields cleared successfully!")
+        }
+        
+        
+        
+        XCTAssert(true, "You nailed it!")
+    }
+    
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.

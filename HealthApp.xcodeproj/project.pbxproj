@@ -17,15 +17,16 @@
 		3C216B662853CB34007B863F /* HealthAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B652853CB34007B863F /* HealthAppUITests.swift */; };
 		3C216B682853CB34007B863F /* HealthAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B672853CB34007B863F /* HealthAppUITestsLaunchTests.swift */; };
 		3C216B772853D391007B863F /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B762853D391007B863F /* LabelView.swift */; };
-		3C216B792853D39B007B863F /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C216B782853D39B007B863F /* LabelView.xib */; };
 		3C216B7A28564849007B863F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B482853CB31007B863F /* ViewController.swift */; };
 		3C216B7B2856484A007B863F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B482853CB31007B863F /* ViewController.swift */; };
 		3C216B7C285649DF007B863F /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B762853D391007B863F /* LabelView.swift */; };
 		3C216B7D285649E0007B863F /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B762853D391007B863F /* LabelView.swift */; };
-		3C216B7E285649F0007B863F /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C216B782853D39B007B863F /* LabelView.xib */; };
-		3C216B7F285649F1007B863F /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C216B782853D39B007B863F /* LabelView.xib */; };
 		3C216B8128564A82007B863F /* Coverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B8028564A82007B863F /* Coverage.swift */; };
 		3C216B852856615B007B863F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C216B4A2853CB31007B863F /* Main.storyboard */; };
+		3CD91C57285670C40095F300 /* ViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 3C216B482853CB31007B863F /* ViewController.swift */; };
+		3CD91C592856734B0095F300 /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD91C582856734B0095F300 /* LabelView.xib */; };
+		3CD91C5A2856734B0095F300 /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD91C582856734B0095F300 /* LabelView.xib */; };
+		3CD91C5B2856734B0095F300 /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD91C582856734B0095F300 /* LabelView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +61,8 @@
 		3C216B652853CB34007B863F /* HealthAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthAppUITests.swift; sourceTree = "<group>"; };
 		3C216B672853CB34007B863F /* HealthAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3C216B762853D391007B863F /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
-		3C216B782853D39B007B863F /* LabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelView.xib; sourceTree = "<group>"; };
 		3C216B8028564A82007B863F /* Coverage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coverage.swift; sourceTree = "<group>"; };
+		3CD91C582856734B0095F300 /* LabelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +154,8 @@
 		3C216B752853D370007B863F /* LabelView */ = {
 			isa = PBXGroup;
 			children = (
+				3CD91C582856734B0095F300 /* LabelView.xib */,
 				3C216B762853D391007B863F /* LabelView.swift */,
-				3C216B782853D39B007B863F /* LabelView.xib */,
 			);
 			path = LabelView;
 			sourceTree = "<group>";
@@ -264,7 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C216B512853CB34007B863F /* LaunchScreen.storyboard in Resources */,
-				3C216B792853D39B007B863F /* LabelView.xib in Resources */,
+				3CD91C592856734B0095F300 /* LabelView.xib in Resources */,
 				3C216B4E2853CB34007B863F /* Assets.xcassets in Resources */,
 				3C216B4C2853CB31007B863F /* Main.storyboard in Resources */,
 			);
@@ -274,7 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C216B7E285649F0007B863F /* LabelView.xib in Resources */,
+				3CD91C5A2856734B0095F300 /* LabelView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +283,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C216B7F285649F1007B863F /* LabelView.xib in Resources */,
+				3CD91C57285670C40095F300 /* ViewController.swift in Resources */,
 				3C216B852856615B007B863F /* Main.storyboard in Resources */,
+				3CD91C5B2856734B0095F300 /* LabelView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
