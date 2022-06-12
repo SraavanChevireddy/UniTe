@@ -25,6 +25,7 @@
 		3C216B7E285649F0007B863F /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C216B782853D39B007B863F /* LabelView.xib */; };
 		3C216B7F285649F1007B863F /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C216B782853D39B007B863F /* LabelView.xib */; };
 		3C216B8128564A82007B863F /* Coverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216B8028564A82007B863F /* Coverage.swift */; };
+		3C216B852856615B007B863F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C216B4A2853CB31007B863F /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -282,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C216B7F285649F1007B863F /* LabelView.xib in Resources */,
+				3C216B852856615B007B863F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

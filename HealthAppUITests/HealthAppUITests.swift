@@ -69,16 +69,9 @@ class HealthAppUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc_register = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
-        vc_register?.loadViewIfNeeded()
-        
-        
         let enterYourFirstNameTextField = app.textFields["Enter your firstname"]
         enterYourFirstNameTextField.tap()
         enterYourFirstNameTextField.typeText("Samuel")
-        
-        XCTAssertEqual(vc_register?.tf_firstName.textContentType, UITextContentType.givenName, "First Name textfield is not name")
         
         let enterYourLastNameTextField = app.textFields["Enter your last name"]
         enterYourLastNameTextField.tap()
